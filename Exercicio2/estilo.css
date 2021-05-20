@@ -4,6 +4,13 @@ body {
   padding: 0;
 }
 
+section div .info, section div .success, section div .danger, section div .warning, section div .default {
+  -moz-transition: all 0.5 ease-in-out;
+  -ms-transition: all 0.5 ease-in-out;
+  -o-transition: all 0.5 ease-in-out;
+  transition: all 0.5 ease-in-out;
+}
+
 body {
   display: flex;
   flex-flow: row nowrap;
@@ -45,6 +52,56 @@ section {
   margin-left: 15%;
   padding-left: 20px;
 }
+section div {
+  margin-top: 50px;
+  border-radius: 10px;
+  padding: 0 15px 0 15px;
+}
+section div .default {
+  border: 1px solid #d6d8db;
+  color: #383d41;
+  background: #e2e3e5;
+}
+section div .default:hover {
+  background: #383d41;
+  color: white;
+}
+section div .warning {
+  border: 1px solid #ffeeba;
+  color: #856404;
+  background: #fff3cd;
+}
+section div .warning:hover {
+  background: #856404;
+  color: white;
+}
+section div .danger {
+  border: 1px solid #f5c6cb;
+  color: #721c24;
+  background: #f8d7da;
+}
+section div .danger:hover {
+  background: #721c24;
+  color: white;
+}
+section div .success {
+  border: 1px solid #c3e6cb;
+  color: #155724;
+  background: #d4edda;
+}
+section div .success:hover {
+  background: #155724;
+  color: white;
+}
+section div .info {
+  border: 1px solid #bee5eb;
+  color: #0c5460;
+  background: #d1ecf1;
+}
+section div .info:hover {
+  background: #0c5460;
+  color: white;
+}
 
 h1 {
   font-family: "Dancing Script", cursive;
@@ -53,10 +110,6 @@ h1 {
 }
 h1 .cursivo {
   color: #bf4080;
-}
-
-div {
-  margin-top: 50px;
 }
 
 /*# sourceMappingURL=estilo.css.map */
