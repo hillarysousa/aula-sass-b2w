@@ -1,0 +1,79 @@
+@import 'variaveis', 'reset', '_mixins', '_extends';
+
+body {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+nav {
+    position: fixed;
+    width: 15%;
+    height: 100vh;
+    background: white;
+    border-right: 3px solid $second-color;
+}
+
+ul {
+    padding: 0;
+    margin: 15px 0 0 0;
+    width: 100%;
+
+    li {
+        list-style: none;
+        width: 100%;
+
+        a {
+            color: $second-color;
+            text-decoration: none;
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+            &:hover {
+                background: $second-color;
+                color: white;
+            }
+        }
+    }
+}
+
+section {
+    position: relative;
+    width: 85%;
+    margin-left: 15%;
+    padding-left: 20px;
+}
+
+h1 {
+    font-family: $cursive;
+    font-size: 70px;
+    margin: 15px 0 0 0;
+
+    .cursivo {
+        color: $pink;
+    }
+}
+
+div {
+    margin-top: 50px;
+}
+
+.default {
+    @include caixa(#e2e3e5, #d6d8db, #383d41);
+}
+
+.warning {
+    @include caixa(#fff3cd, #ffeeba, #856404);
+}
+
+.danger {
+    @include caixa(#f8d7da, #f5c6cb, #721c24);
+}
+
+.success {
+    @include caixa(#d4edda, #c3e6cb, #155724);
+}
+
+.info {
+    @include caixa(#d1ecf1, #bee5eb, #0c5460);
+}

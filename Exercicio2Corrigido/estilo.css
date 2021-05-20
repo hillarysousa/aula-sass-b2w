@@ -1,0 +1,135 @@
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.info, .success, .danger, .warning, .default {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+body {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+nav {
+  position: fixed;
+  width: 15%;
+  height: 100vh;
+  background: white;
+  border-right: 3px solid #5300ab;
+}
+
+ul {
+  padding: 0;
+  margin: 15px 0 0 0;
+  width: 100%;
+}
+ul li {
+  list-style: none;
+  width: 100%;
+}
+ul li a {
+  color: #5300ab;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+ul li a:hover {
+  background: #5300ab;
+  color: white;
+}
+
+section {
+  position: relative;
+  width: 85%;
+  margin-left: 15%;
+  padding-left: 20px;
+}
+
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 70px;
+  margin: 15px 0 0 0;
+}
+h1 .cursivo {
+  color: #bf4080;
+}
+
+div {
+  margin-top: 50px;
+}
+
+.default {
+  border: 1px solid #d6d8db;
+  color: #383d41;
+  background: #e2e3e5;
+  padding: 0 15px;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+.default:hover {
+  background-color: #383d41;
+  color: white;
+}
+
+.warning {
+  border: 1px solid #ffeeba;
+  color: #856404;
+  background: #fff3cd;
+  padding: 0 15px;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+.warning:hover {
+  background-color: #856404;
+  color: white;
+}
+
+.danger {
+  border: 1px solid #f5c6cb;
+  color: #721c24;
+  background: #f8d7da;
+  padding: 0 15px;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+.danger:hover {
+  background-color: #721c24;
+  color: white;
+}
+
+.success {
+  border: 1px solid #c3e6cb;
+  color: #155724;
+  background: #d4edda;
+  padding: 0 15px;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+.success:hover {
+  background-color: #155724;
+  color: white;
+}
+
+.info {
+  border: 1px solid #bee5eb;
+  color: #0c5460;
+  background: #d1ecf1;
+  padding: 0 15px;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+.info:hover {
+  background-color: #0c5460;
+  color: white;
+}
+
+/*# sourceMappingURL=estilo.css.map */
